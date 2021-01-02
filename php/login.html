@@ -1,0 +1,33 @@
+<!-- 登录页界面 -->
+
+<div class="main">
+	<!-- <div class="loginImage"></div> -->
+	<!-- <img class = "login_img" src="../images/login_image.png"> -->
+	<div class = "loain_container">
+		<!-- <img class = "loainImg" src="../images/login_image.png"> -->
+		<form action="login_check.php" method="post" class="login_form">
+			<div class="login_infor">
+				<lable class="userIpt">用户名 <input type="text" name="userName" class = "loginInput" placeholder="请输入工号">
+				</lable>
+				<lable class="userIpt">密码&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" class = "loginInput" name="userPwd" placeholder="请输入密码">
+				</lable>
+			</div>
+			
+			<div class="login_infor" id='userKind'>
+				<lable class="userKind"><input type="radio" name="userKind" value="1" checked="true"><span>管理员</span>
+				</lable>
+				<lable class="userKind"><input type="radio" name="userKind" value="0"><span>普通用户</span>
+				</lable>
+			</div>
+			<div class = "Button">
+				<label><input class="button loginBtn" type="submit" id="loginBtn" value="登录">
+				</label>
+				<label class = "registerButton"><a class="button registerBtn" href="register.php" id="registerBtn">注册</a>
+				</label>
+			</div>
+			
+		</form>
+		<div class="bottom"></div>        <!-- 让页脚跟输入框之间有合适的距离 -->
+	</div>
+	
+</div>
